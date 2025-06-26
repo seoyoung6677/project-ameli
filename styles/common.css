@@ -1,0 +1,23 @@
+#wrap {
+    min-width:1900px;
+}
+#wrap header{
+    position:fixed;
+    background-color:aqua;
+    padding:7px 50px;
+    width:100%;
+    display:flex;
+    flex-flow:row nowrap;
+    align-items:center;
+    justify-content:space-between;
+    height:74px;
+
+}
+#wrap header h1 {}
+#wrap nav {background-color:blue;}
+#wrap nav .gnb {
+    display:flex;
+    flex-flow:row nowrap;
+}
+#wrap nav .gnb li {}
+#wrap nav .gnb li a {}
