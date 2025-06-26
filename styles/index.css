@@ -1,7 +1,70 @@
+
+html,body{
+    margin:0;
+    padding:0;
+    overflow: hidden;
+}
 /* 1행 */
-.top_banner {text-align: center;}
-.top_banner p {}
+
+.top_banner {
+    text-align: center;
+    background-color:#BEE0EA;
+    padding:15px 10px;
+    position:fixed;
+    z-index:1200;
+    height:47px;
+    top:0;
+    left:0;
+    width:100%;
+}
+.top_banner p {
+    font-size:0.875rem;
+    
+}
 #wrap {}
 #wrap header {}
-#wrap header .right_menu {}
+#wrap header .right_menu {
+    display:flex;
+    align-items: center;
+    gap:20px;
+}
 #wrap header .right_menu li a {}
+.main_banner {
+    width:100%;
+    margin:0 auto;
+     position:relative; /* 기준점점 */
+    
+* {
+    box-sizing: border-box;
+}
+}
+main .banner_wrap {
+   
+    width:100%;
+    margin:0 auto;
+    max-width: 1920px;
+    
+}
+main .main_banner .banner_wrap {background-color:aqua;}
+main .main_banner .banner_wrap .banner_slides {display:block;}
+.banner_wrap .banner_slides img {
+    max-width:100%;
+    display:block;
+    margin: 0 auto;
+    z-index:20;
+
+}
+main .main_banner .banner_btn {
+    
+    z-index:30;
+    position:absolute;
+    top:50%;
+    display: flex;
+    justify-content: space-between;
+    width:100%;
+    padding:0 30px;
+}
+main .main_banner .banner_btn #banner_prev{}
+main .main_banner .banner_btn #banner_next {
+    transform: scaleX(-1);/* 버튼 좌우반전 */
+}
