@@ -2,7 +2,7 @@
 html,body{
     margin:0;
     padding:0;
-    overflow: hidden;
+    
 }
 /* 1행 */
 
@@ -68,3 +68,22 @@ main .main_banner .banner_btn #banner_prev{}
 main .main_banner .banner_btn #banner_next {
     transform: scaleX(-1);/* 버튼 좌우반전 */
 }
+
+#wrap main .best_items {
+    display:flex;
+    flex-direction:column;
+}
+#wrap main .best_items h2 {
+    margin-bottom: 50px;
+    font-size:2.313rem;
+    font-weight:600;
+
+}
+#wrap main .best_items .best_category {}
+#wrap main .best_items .best_category .category_list {}
+#wrap main .best_items .best_category .category_list li {}
+#wrap main .best_items .swiper {}
+#wrap main .best_items .swiper .swipper-wrapper {
+    display: flex;
+}
+#wrap main .best_items .swiper .swipper-wrapper .slide1 {}
