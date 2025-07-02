@@ -352,6 +352,7 @@ main .best_items .items_inner .swiper .swiper-wrapper .swiper-slide .product_img
     -webkit-text-stroke: 1px #fff;
     font-weight:900;
     font-size:1.688rem;
+    margin-bottom:10px;
     
 }  
 .add .swiper-wrapper .swiper-slide .add_banner .left_wrap .product_info  .item_list li{}
@@ -403,54 +404,169 @@ main .best_items .items_inner .swiper .swiper-wrapper .swiper-slide .product_img
     padding-top:50px;
 }
 
+.add .swiper-wrapper .swiper-slide .item_list_wrap  a {
+    
+}
+.add .swiper-wrapper .swiper-slide .item_list_wrap  a img {
+    border: 3px solid red;
+    width:100%;
+    margin-bottom:10px;
+}
+.add .swiper-wrapper .swiper-slide .item_list_wrap  a p {}
+.add .swiper-wrapper .swiper-slide .item_list_wrap .view_more {}
+.add .swiper-wrapper .swiper-slide .item_list_wrap .view_more a {}
+.add .swiper-wrapper .swiper-slide .item_list_wrap .view_more a span {}
+.add .swiper-wrapper .swiper-slide .item_list_wrap .view_more a img {}
+
+
 /* 4행 ----------------------------------------- */
-.new_product {
+.new_product_wrap_all {
   /*   padding:0 50px; */
     /* padding-top:131px; */
-    padding:0 50px;
-    border:3px violet solid;
+    /* padding:0 50px; */
+    /* border:3px violet solid; */
+    padding:0 105px; 
+    
 }
-.new_product h1 {
+.new_product_wrap_all h1 {
     font-size:2rem;
     font-weight:800;
     margin-bottom:18px;
     padding-top:131px;
     margin-bottom:10px;
 }
-.new_product > p {
+.new_product_wrap_all > p {
     margin-bottom: 67px;
 }
-.new_product .new_product_wrap {
-    display:flex;
-   
+.new_product_wrap_all .new_product_wrap {
+    width:100%;
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
 
     }
-.new_product .new_product_wrap .new_product {
+.new_product_wrap_all .new_product_wrap .new_product {
     position:relative;
-   
-    border:3px red solid;
+    /* border:3px green solid; */
+    
+    /* width:514px; */
+  /*   width:100%; */
 }
-.new_product .new_product_wrap .new_product img {}
-.new_product .new_product_wrap .new_product .text_box {
-    position:absolute; left:37px; bottom:25px;
+.new_product_wrap_all .new_product_wrap .new_product .text_box .text-row{
+    display: flex;
+   /*  border:3px green solid; */
+    align-items: center;
+    justify-content: space-between;
+    /* width:100%; */
+}
+.new_product_wrap_all .new_product_wrap .new_product:nth-child(3) .text_box .text-row{
+    text-align: right;
+    display:block; /*  마지막 파우더 4종 비교 플렉스 깨버리기 */
+}
+.new_product_wrap_all .new_product_wrap .new_product:nth-child(3) .text_box{
+    text-align: right;
+    right:0px;
+    bottom:0px;
+    
+
+}
+.new_product_wrap_all .new_product_wrap .new_product > img {
+    width:100%;
+}
+.new_product_wrap_all .new_product_wrap .new_product .text_box {
+    position:absolute; left:0px; bottom:0px;
+    border: #70B3CE 3px solid;
+    width:100%;
     padding:25px 37px;
-    border:3px blue solid;
+    
+   /*  border:3px blue solid; */
 }
-.new_product .new_product_wrap .new_product .text_box h3 {
+.new_product_wrap_all .new_product_wrap .new_product .text_box h3 {
    /*  margin-bottom:18px; */
     font-weight:600;
+    font-size:1.688rem;
+    width:100%;
+
+}
+.new_product_wrap_all .new_product_wrap .new_product:nth-child(2) .text_box h3{
     line-height:1.5;
-    font-size:1.688rem;
-
 }
-.new_product .new_product_wrap .new_product .text_box h3 >* {font-weight:600;}
-.new_product .new_product_wrap .new_product .text_box h3 .big_title{
+.new_product_wrap_all .new_product_wrap .new_product:nth-child(3) .text_box h3{
+    line-height:1.5;
+}
+.new_product_wrap_all .new_product_wrap .new_product .text_box h3 >* {}
+.new_product_wrap_all .new_product_wrap .new_product .text_box h3 .big_title{
     font-size:1.875rem ;
+    font-weight:600;
+    /* line-height: normal; */
 }
-.new_product .new_product_wrap .new_product .text_box h3 .small_title{
+.new_product_wrap_all .new_product_wrap .new_product .text_box h3 .small_title{
     font-size:1.688rem;
+    
 }
 
-.new_product .new_product_wrap .new_product .text_row {}
-.new_product .new_product_wrap .new_product .text_row p {}
-.new_product .new_product_wrap .new_product .text_row .view_more_btn {}
+.new_product_wrap_all .new_product_wrap .new_product .text_box .text-row {
+    /* padding:25px 37px; */
+    border:3px red solid;
+    
+
+}
+.new_product_wrap_all .new_product_wrap .new_product .text-row > * {
+    color:#727272;
+    font-size: 0.938rem;
+}
+.new_product_wrap_all .new_product_wrap .new_product:nth-child(3) .text-row .view_more_btn{
+    border:3px blue solid;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    text-align: right;
+}
+.new_product_wrap_all .new_product_wrap .new_product .text-row .view_more_btn {
+    display: flex;
+    align-items: center;
+    gap:10px;
+}
+/* 흰색 글자 */
+.new_product_wrap_all .new_product_wrap .white-text .text_box >* {
+    color:white;
+    border:3px red solid;
+}
+.new_product_wrap_all .new_product_wrap .white-text .text_box p {
+    color:#fff;
+}
+.new_product_wrap_all .new_product_wrap .white-text .text_box .view_more_btn {
+    color:#fff;
+    
+}
+/* 5행 -------------------------- */
+.makeup_lookb {
+    position:relative;
+}
+.makeup_lookb .lookb_wrap {
+    position:absolute;
+    left:282px;
+    bottom:0;
+    top:0;
+    border:3px solid red;
+
+}
+.makeup_lookb .lookb_wrap img {}
+.makeup_lookb .lookb_wrap h2 {}
+.makeup_lookb .lookb_wrap .lookb_txt {}
+.makeup_lookb .lookb_wrap .lookb_txt p {}
+.makeup_lookb .lookb_wrap .lookb_product_wrap {
+    
+    border:3px solid red;
+    display:flex;
+}
+.makeup_lookb .lookb_wrap .lookb_product_wrap .lookb_product {
+    display:flex;
+}
+.makeup_lookb .lookb_wrap .lookb_product_wrap .lookb_product a {}
+.makeup_lookb .lookb_wrap .lookb_product_wrap .lookb_product a img {}
+.makeup_lookb .lookb_wrap .lookb_product_wrap .lookb_product a span {}
+.makeup_lookb .lookb_wrap  .lookb_view_more{}
+.makeup_lookb .lookb_wrap  .lookb_view_more a {}
+.makeup_lookb .lookb_wrap  .lookb_view_more a span {}
+.makeup_lookb .lookb_wrap  .lookb_view_more a span img {}
