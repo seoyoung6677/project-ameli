@@ -9,8 +9,14 @@
     <!-- 웹글꼴->reset->Common->개별css -->
     <link rel="stylesheet" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard-dynamic-subset.min.css" />
     <link href="./styles/reset.css" rel="stylesheet">
-<!--   <link href="./styles/common.css" rel="stylesheet"> -->
     <link href="./styles/index.css" rel="stylesheet">
+    <script src="./script/index.js" defer></script>
+    <!--플러그인 필수 css cdn 연결-->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <!--플러그인 필수 JS cdn 연결-->
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 </head>
 <body>
     <div class="top_banner">
@@ -40,13 +46,20 @@
             <!-- 광고배너 -->
             <section class="main_banner" id="main_banner_wrap">
                 <!--  광고개별그룹 -->
-                <div class="banner_wrap">
-                    <div class="banner_slides">
-                        <img src="./images/main_banner_01.jpg" class="banner_slides" alt="배너1" >
-                        <!-- <img src="#" class="banner_slides" alt="배너2">
-                        <img src="#" class="banner_slides" alt="배너3"> -->
+                <div class="swiper id=main_banner">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide slide1">
+                            <div class="banner_wrap">
+                                <div class="banner_slides">
+                                    <img src="./images/main_banner_01.jpg" class="banner_slides" alt="배너1" >
+                                    <!-- <img src="#" class="banner_slides" alt="배너2">
+                                    <img src="#" class="banner_slides" alt="배너3"> -->
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
+                
                 <div class="banner_btn">
                     <button type="button" id="banner_prev"><img src="./images/banner_btn.png" alt="이전 배너보기"></button>
                     <button type="button" id="banner_next"><img src="./images/banner_btn.png" alt="다음 배너보기"></button>
@@ -66,7 +79,7 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="swiper id=best_items_wrap" > <!-- 무조건 이름주기 한칸뛰고 써도 되고 아이디를 줘도 됨 -->
+                    <div class="swiper" id="best_items_wrap" > <!-- 무조건 이름주기 한칸뛰고 써도 되고 아이디를 줘도 됨 -->
                         <div class="swiper-wrapper"> <!-- 안줘도 됨  -->
                             <div class="swiper-slide slide1"> <!-- 줘도 됨 -->
                                 <div class="product_img">
@@ -147,32 +160,82 @@
                                         </div>
                                     </div>
                                     <div class="swiper-slide slide4">
-                                <div class="product_img">
-                                    <a href="#">
-                                        <img src="./images/product_highlight.png" alt="아스트랄라이트 네온 라이터"></a>
-                                        <button class="cart_btn">
-                                            <img src="./images/cart_btn.png" alt="장바구니">
-                                        </button>
-                                    </div>
-                                    <div class="product_txt">
-                                        <p class="product_name">
+                                        <div class="product_img">
                                             <a href="#">
-                                                <span class="label">New</span>
-                                                <span class="name">아스트랄라이트 네온 라이터</span></a>
-                                            </p>
-                                            <div class="original_price"><del>42,000원</del></div>
-                                            <div class="price">
-                                            <span class="discounted">37,800원</span>
-                                            <span class="discount_rate">10%</span>
+                                            <img src="./images/product_highlight.png" alt="아스트랄라이트 네온 라이터"></a>
+                                            <button class="cart_btn">
+                                                <img src="./images/cart_btn.png" alt="장바구니">
+                                            </button>
                                         </div>
-                                        <div class="tag">
-                                            <span># 하이라이터</span>
-                                            <span># 고급스러운 컬러광</span>
+                                        <div class="product_txt">
+                                            <p class="product_name">
+                                                <a href="#">
+                                                    <span class="label">New</span>
+                                                    <span class="name">아스트랄라이트 네온 라이터</span></a>
+                                                </p>
+                                                <div class="original_price"><del>42,000원</del></div>
+                                                <div class="price">
+                                                <span class="discounted">37,800원</span>
+                                                <span class="discount_rate">10%</span>
+                                            </div>
+                                            <div class="tag">
+                                                <span># 하이라이터</span>
+                                                <span># 고급스러운 컬러광</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide slide4">
+                                        <div class="product_img">
+                                            <a href="#">
+                                            <img src="./images/product_highlight.png" alt="아스트랄라이트 네온 라이터"></a>
+                                            <button class="cart_btn">
+                                                <img src="./images/cart_btn.png" alt="장바구니">
+                                            </button>
+                                        </div>
+                                        <div class="product_txt">
+                                            <p class="product_name">
+                                                <a href="#">
+                                                    <span class="label">New</span>
+                                                    <span class="name">아스트랄라이트 네온 라이터</span></a>
+                                                </p>
+                                                <div class="original_price"><del>42,000원</del></div>
+                                                <div class="price">
+                                                <span class="discounted">37,800원</span>
+                                                <span class="discount_rate">10%</span>
+                                            </div>
+                                            <div class="tag">
+                                                <span># 하이라이터</span>
+                                                <span># 고급스러운 컬러광</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide slide4">
+                                        <div class="product_img">
+                                            <a href="#">
+                                            <img src="./images/product_highlight.png" alt="아스트랄라이트 네온 라이터"></a>
+                                            <button class="cart_btn">
+                                                <img src="./images/cart_btn.png" alt="장바구니">
+                                            </button>
+                                        </div>
+                                        <div class="product_txt">
+                                            <p class="product_name">
+                                                <a href="#">
+                                                    <span class="label">New</span>
+                                                    <span class="name">아스트랄라이트 네온 라이터</span></a>
+                                                </p>
+                                                <div class="original_price"><del>42,000원</del></div>
+                                                <div class="price">
+                                                <span class="discounted">37,800원</span>
+                                                <span class="discount_rate">10%</span>
+                                            </div>
+                                            <div class="tag">
+                                                <span># 하이라이터</span>
+                                                <span># 고급스러운 컬러광</span>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
                         <!--  <div class="swiper-sllide slide5">
                             <div class="product_img">
                                 <img src="./images/product_highlight.png" alt="아스트랄라이트 네온 라이터">
@@ -194,15 +257,14 @@
                                 <span># 고급스러운 컬러광</span>
                             </div>
                         </div> -->
-                        <div class="swiper-scrollbar"></div>   
                     </div>
-                <!--  </div> -->
-                <div class="view_btn_wrap">
-                    <a href="#" class="view_btn">
-                        <span>view more</span>
-                        <span>+</span>
-                    </a>
-                </div>
+                    <div class="view_btn_wrap">
+                        <a href="#" class="view_btn">
+                            <span>view more</span>
+                            <span>+</span>
+                        </a>
+                    </div>
+                    <div class="swiper-scrollbar"></div>   
             </section>
             <!-- 3행이다-->
             <div class="swiper add">
@@ -343,18 +405,22 @@
                     </div>
                 </div>
             </section>
+            <!-- 6행- -->
             <section class="must_read_wrap">
                 <div class="must_read_title">
                     <h2>Must Read</h2>
                     <p>아멜리 뷰티인사이드</p>
                 </div>
                 <div class="must_read_card">
-                    <img src="./images/Must_Read.01.jpg" alt="#">
+                    <a href="#"><img src="./images/Must_Read.01.jpg" alt="#"></a>
                     <div class="right_txt">
                         <h3>추억의 분할 섀도우가 돌아왔다?!</h3>
                         <p>하나의 케이스에 두 가지 컬러를 담아<br>뉴멜리님들의 다양한 니즈를 충족시켰던 그 제품의 감성을 그대로,<br>이번에는 '치얼업 박스'로 여러분을 찾아갑니다.<br>더욱 업그레이드 되어 다시 돌아왔어요.</p>
                         <div class="must_read_btn">
-                            <span>view more<img src="./images/add_2.png"></span>
+                            <a href="#">
+                                <span>view more</span>
+                                <img src="./images/add_2.png">
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -363,23 +429,54 @@
                         <h3>YEPPEE!<br>타투 스티커,<br>아멜리 멤버들은 어떻게 활용할까?</h3>
                         <p>하루하루 다른 기분, 다른 취향.<br>아멜리 멤버들은 어떤 순간에 어떤 타투 스티커를 골랐을까요?</p>
                         <div class="must_read_btn">
-                            <span>view more<img src="./images/add_2.png"></span>
+                            <a href="#">
+                                <span>view more</span>
+                                <img src="./images/add_2.png">
+                            </a>
                         </div>
                     </div>
-                    <img src="./images/Must_Read.02.jpg" alt="#">
+                    <a href="#"><img src="./images/Must_Read.02.jpg" alt="#"></a>
                 </div>
                 <div class="must_read_card">
-                    <img src="./images/Must_Read.03.jpg" alt="#">
+                    <a href="#"><img src="./images/Must_Read.03.jpg" alt="#"></a>
                     <div class="right_txt">
                         <h3>섀도우를 하이라이터로?!</h3>
                         <p>웜한 컬러에서 쿨한 컬러까지<br>내 피부에 어울리는 컬러로,<br>혹은 원하는 컬러빔을 찾아서 하이라이터로 써보세요.</p>
                         <div class="must_read_btn">
-                            <span>view more<img src="./images/add_2.png"></span>
+                            <a href="#">
+                                <span>view more</span>
+                                <img src="./images/add_2.png">
+                            </a>
                         </div>
                     </div>
                 </div>
             </section>
+            <!-- 7행 -->
+            <section class="popup_wrap">
+                <h2>Popup store</h2>
+                <p>아멜리 신촌에서 팝업한다!</p>
+                <div class="image_container">
+                    <img src="./images/popup.jpg" alt="">
+                    <div class="overlay"></div>
+                    <div class="popup_txt"><a href="#">Visit Now</a></div>
+                </div>
+            </section>
+            <!-- 8행 -->
+            <section class="brand_movie">
+                <div class="container">
+                    <h2>BRAND MOVIE</h2>
+                <p>영상으로 만나는 아멜리</p>
+                <iframe src="https://www.youtube.com/embed/3XUe8zQBgB4?autoplay=1&mute=1&loop=1&playlist=3XUe8zQBgB4" title="비슷한 하이라이터에 지쳤다면 아멜리 네온라이터" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </section>
         </main>
+        <footer>
+            <div class="footer_wrap">
+                <div class="left_wrap">
+                    <img src="">
+                </div>
+            </div>
+        </footer>
     </div>
 </body>
 </html>
