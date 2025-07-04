@@ -21,7 +21,7 @@ const addswiper = new Swiper('.add',{
     slidePerGroup:1,
     loop:false,
     autoplay:{
-        delay:3000,
+        delay:5000,
         disableOnInteraction:false,
     },
     scrollbar:{
