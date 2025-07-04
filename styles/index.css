@@ -618,9 +618,10 @@ main .best_items .items_inner #best_items_wrap .swiper-wrapper .swiper-slide .pr
 .new_product_wrap_all .new_product_wrap .new_product:nth-child(3) .text-row .view_more_btn{
    /*  border:3px blue solid; */
     display: flex;
-    align-items: flex-end;
-    flex-direction: column;
-    text-align: right;
+    align-items: center;
+    flex-direction: row;
+    justify-content: flex-end;
+    /* text-align: right; */
 }
 .new_product_wrap_all .new_product_wrap .new_product .text-row .view_more_btn {
     display: flex;
