@@ -1,6 +1,6 @@
 
 
-const swiper = new Swiper('#best_items_wrap',{
+const swiper = new Swiper('#tnbest_items_wrap',{
     slidesPerView: '4',
     slidePerGroup:1,
     spaceBetween:29,
