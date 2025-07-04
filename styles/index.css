@@ -205,6 +205,12 @@ main .best_items .items_inner #best_items_wrap .swiper-wrapper .swiper-slide .pr
     filter:brightness(1.01);
     transform:scale(1.04);
 }
+#wrap main .best_items .items_inner #best_items_wrap .swiper-wrapper .slide4 .product_img a img:hover,
+#wrap main .best_items .items_inner #best_items_wrap .swiper-wrapper .slide5 .product_img a img:hover,
+#wrap main .best_items .items_inner #best_items_wrap .swiper-wrapper .slide6 .product_img a img:hover{
+    filter:brightness(1.04);
+    transform:scale(1.04);
+}
 main .best_items .items_inner #best_items_wrap .swiper-wrapper .swiper-slide .product_img .cart_btn img{
     display: inline-block;
     /* border: 1px solid violet; */
