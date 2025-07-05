@@ -1,7 +1,7 @@
 * {box-sizing: border-box;}
-
+body{min-width:1280px;}
 #wrap {
-    width:1920px;
+    max-width: 1920px;
     margin:0 auto;
 }
 
@@ -111,7 +111,7 @@ main .main_banner .banner_btn #banner_next {
 /*------------------------------------------------------- 2행  */
 
 #wrap main .best_items {
-    /* max-width:100%; */
+    max-width:100%;
     padding:0 50px;
     padding-top:131px;
    /*  border:2px solid red; */
@@ -323,7 +323,7 @@ main .best_items .items_inner #best_items_wrap .swiper-wrapper .swiper-slide .pr
 .add_banner{
     position:relative;
    /*  padding-top:131px; */
-    max-width:1920px;
+    max-width:100%;
   /*   border:3px solid red; */
     
     /*     border: #70B3CE 3px solid; */
@@ -349,7 +349,7 @@ main .best_items .items_inner #best_items_wrap .swiper-wrapper .swiper-slide .pr
 }
 .add_banner .add .swiper-wrapper .swiper-slide {}
 .add_banner .add .swiper-wrapper .swiper-slide  > a img {
-   
+    max-width:100%;
     /* border:blue solid 3px; */
     height:auto;
     display:block;
