@@ -10,6 +10,7 @@
     <link rel="stylesheet" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard-dynamic-subset.min.css" />
     <link href="./styles/reset.css" rel="stylesheet">
     <link href="./styles/index.css" rel="stylesheet">
+    <!-- <link href="./styles/common.css" rel="stylesheet"> -->
     <script src="./script/index.js" defer></script>
     <!--플러그인 필수 css cdn 연결-->
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
@@ -26,14 +27,70 @@
         <header>
             <h1><a href="./index.html"><img src="./images/logo.png" alt="아멜리"></a></h1>
             <nav>
-                <ul class="gnb">
-                    <li><a href="#">BEST</a></li>
-                    <li><a href="#">NEW</a></li>
-                    <li><a href="#">EYE</a></li>
-                    <li><a href="#">LIP</a></li>
-                    <li><a href="#">SET</a></li>
-                    <li><a href="#">ai-heva</a></li>
-                </ul>
+            <ul class="gnb">
+                <li>
+                <a href="#">BEST</a>
+                <div class="lnb_bg">
+                    <ul class="lnb_depth1">
+                        <li><a href="#">EYE</a></li>
+                        <li><a href="#">LIP</a></li>
+                        <li><a href="#">FACE</a></li>
+                    </ul>
+                </div>
+                </li>
+                <li>
+                <a href="#">NEW</a>
+                <div class="lnb_bg" id="lnb_new">
+                    <ul class="lnb_depth1">
+                        <li><a href="#">FACE</a></li>
+                        <li><a href="#">EYE</a></li>
+                        <li><a href="#">LIP</a></li>
+                        <li><a href="#">FACE</a></li>
+                    </ul>
+                </div>
+                </li>
+                <li>
+                <a href="#">EYE</a>
+                <div class="lnb_bg" id="lnb_eye">
+                    <ul class="lnb_depth1">
+                        <li><a href="#">스텝 베이직</a></li>
+                        <li><a href="#">스윗 다이아</a></li>
+                        <li><a href="#">스파클 스팟</a></li>
+                    </ul>
+                </div>
+                </li>
+                <li>
+                <a href="#">LIP</a>
+                <div class="lnb_bg" id="lnb_LIP">
+                    <ul class="lnb_depth1">
+                        <li><a href="#">터치밤</a></li>
+                        <li><a href="#">플랫립스</a></li>
+                        <li><a href="#">에어립스</a></li>
+                    </ul>
+                </div>
+                </li>
+                <li>
+                <a href="#">SET</a>
+                <div class="lnb_bg" id="lnb_SET">
+                    <ul class="lnb_depth1">
+                        <li><a href="#">치얼업 박스</a></li>
+                        <li><a href="#">메이크업 세트</a></li>
+                        <li><a href="#">처음 세트</a></li>
+                        <li><a href="#">AI 필터 메이크업 세트</a></li>
+                    </ul>
+                </div>
+                </li>
+                <li>
+                <a href="#">ai-heva</a>
+                <div class="lnb_bg" id="lnb_ai-heva">
+                    <ul class="lnb_depth1">
+                        <li><a href="#">ASK HEVA</a></li>
+                        <li><a href="#">버추얼 메이크업</a></li>
+                        <li><a href="#">퍼스널 컬러 진단</a></li>
+                    </ul>
+                </div>
+                </li>
+            </ul>
             </nav>
             <ul class="right_menu">
                 <li><a href="#"><img src="./images/person.png" alt="마이페이지"></a></li>
@@ -236,7 +293,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="swiper-scrollbar"></div>
+                            <div class="swiper-scrollbar" ></div>
                         </div>
                         <div class="view_btn_wrap">
                             <a href="#" class="view_btn">
@@ -341,7 +398,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="swiper-scrollbar swiper-scrollbar_2"></div> 
+                    <div class="swiper-scrollbar swiper-scrollbar_3"></div> 
                 </div>
             </section> 
             <!-- 4행이다-->
@@ -442,8 +499,7 @@
                         <p>하나의 케이스에 두 가지 컬러를 담아<br>뉴멜리님들의 다양한 니즈를 충족시켰던 그 제품의 감성을 그대로,<br>이번에는 '치얼업 박스'로 여러분을 찾아갑니다.<br>더욱 업그레이드 되어 다시 돌아왔어요.</p>
                         <div class="must_read_btn">
                             <a href="#">
-                                <span>view more</span>
-                                <img src="./images/add_blue.png">
+                                <span>view more + </span>
                             </a>
                         </div>
                     </div>
@@ -454,8 +510,7 @@
                         <p>하루하루 다른 기분, 다른 취향.<br>아멜리 멤버들은 어떤 순간에 어떤 타투 스티커를 골랐을까요?</p>
                         <div class="must_read_btn">
                             <a href="#">
-                                <span>view more</span>
-                                <img src="./images/add_blue.png">
+                                <span>view more + </span>
                             </a>
                         </div>
                     </div>
@@ -468,8 +523,8 @@
                         <p>웜한 컬러에서 쿨한 컬러까지<br>내 피부에 어울리는 컬러로,<br>혹은 원하는 컬러빔을 찾아서 하이라이터로 써보세요.</p>
                         <div class="must_read_btn">
                             <a href="#">
-                                <span>view more</span>
-                                <img src="./images/add_blue.png">
+                                <span>view more + </span>
+                                
                             </a>
                         </div>
                     </div>

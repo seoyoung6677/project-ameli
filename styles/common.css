@@ -1,4 +1,4 @@
-#wrap {
+/* #wrap {
     max-width:1920px;
     margin:0 auto;
 }
@@ -21,7 +21,7 @@
 }
 #wrap nav {
     /* background-color:blue; */
-}
+/* }
 #wrap nav .gnb {
     display:flex;
     flex-flow:row nowrap;
@@ -30,4 +30,43 @@
    
 }
 #wrap nav .gnb li {}
-#wrap nav .gnb li a {}
+#wrap nav .gnb li a {}  */
+/* 서브메뉴================================ */
+#wrap header nav .gnb > li:first-child:hover .lnb_bg {display:block;}
+#wrap header nav .gnb > li:nth-child(2) .lnb_bg {} 
+#wrap header nav .gnb > li:nth-child(3):hover .lnb_bg {display: block;}
+
+#wrap header nav .gnb > li:nth-child(2):hover .lnb_bg {display:block;}
+#wrap header nav .gnb > li:nth-child(4):hover .lnb_bg {display:block;}
+#wrap header nav .gnb > li:nth-child(5):hover .lnb_bg {display:block;}
+#wrap header nav .gnb > li:nth-child(5):hover .lnb_bg {display:block;}
+#wrap header nav .gnb > li:nth-child(6):hover .lnb_bg {display:block;}
+#wrap header nav .gnb > li .lnb_bg {
+    /* background:rgba(255,255,255,0.8); */
+    background-color: #fff;
+    position:absolute;
+    left:0; top:72px;
+    width:100%; /* absolute 대상일 경우 width 값은 부모설정된 요소의 상대값(%) 으로 결정된다. */
+    padding:20px 50px;
+    /* 초기 숨기기(마우스 올릴때만 보이도록) */
+    display:none;
+    /* border: 2px solid red; */
+    border-top:1px solid  rgba(0, 0, 0, 0.2);
+}
+.lnb_bg .lnb_depth1 {
+    display: flex;
+    gap:50px;
+    justify-content: center;
+
+}
+.lnb_bg .lnb_depth1 li a {
+    
+    font-weight: 500; 
+}
+.gnb > li:hover .lnb_bg {
+    display: block;
+    border:2px solid red;
+}
+/* .gnb > li {
+    position: relative;
+} */
