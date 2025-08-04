@@ -85,25 +85,27 @@ body{min-width:1280px;}
 
 
 /* 서브메뉴================================ */
-
+/* #wrap header {position: relative;} */
 /* #wrap header .gnb > li {position: relative;} */
-#wrap header nav .gnb > li:hover .lnb_bg,.gnb > li .lnb_bg:hover {display:block;}
+#wrap header nav .gnb > li:hover > .lnb_bg {display:block;}
 #wrap header nav .gnb > li .lnb_bg {
-    /* background:rgba(255,255,255,0.8); */
+   
     background-color: #fff;
     position:absolute;
     height:max-content;
-    top: 100%;
+    top: 60px;
     left:0;
-    width:100%; /* absolute 대상일 경우 width 값은 부모설정된 요소의 상대값(%) 으로 결정된다. */
+    width:100%; 
     padding:20px 50px;
     /* 초기 숨기기(마우스 올릴때만 보이도록) */
     display:none;
-    /* border: 2px solid red; */
+    border: 2px solid red;
     border-top:1px solid  rgba(0, 0, 0, 0.2);
 }
 /* #wrap header nav .gnb > li .lnb_bg:hover {display:block;} */
-
+.lnb_container {
+    display: flex; max-width: 1920px;
+}
 .lnb_bg .lnb_depth1 {
     display: flex;
     gap:50px;
@@ -118,9 +120,6 @@ body{min-width:1280px;}
     flex-flow:row nowrap;/* 줄바꿈없이 정렬 */
 }
 
-/* .gnb > li {
-    position: relative;
-} */
 /* 1행 */
 .main_banner {
     width:100%;
