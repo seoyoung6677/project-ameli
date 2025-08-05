@@ -249,10 +249,11 @@ main .best_items .items_inner #best_items_wrap .swiper-wrapper .swiper-slide .pr
 #wrap main .best_items .items_inner #best_items_wrap .swiper-wrapper .swiper-slide .product_img a img {
     max-width:100%;
     /* position:relative; */
-   /*  border: 1px solid violet; */
+    /* border: 1px solid violet; */
     display:block;
     height:auto;
     transition:all 0.7 ease;
+    width:250px;
 }
 #wrap main .best_items .items_inner #best_items_wrap .swiper-wrapper .swiper-slide .product_img a img:hover {
     filter:brightness(1.01);

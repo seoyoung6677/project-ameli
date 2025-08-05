@@ -1,9 +1,9 @@
 
 
 const swiper = new Swiper('#best_items_wrap',{
-    slidesPerView: '4',
+    slidesPerView: '5',
     slidePerGroup:1,
-    spaceBetween:29,
+    spaceBetween:20,
     loop:false,
     autoplay:{
         delay:2000,
