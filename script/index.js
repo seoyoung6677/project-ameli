@@ -56,28 +56,6 @@ const lookbookSwiper = new Swiper('#look_book',{
     },
     watchOverflow:true,
 });
-const gnb =document.querySelector('.gnb');
-const lnb =document.querySelector('.lnb_bg');
-gnb.addEventListener('mouseenter', ()=> {
-    lnb.style.display ='block';
-
-});
-
-gnb.addEventListener('mouseleave',( )=>{
-        lnb.style.display='none';
-
-});
-
-lnb.addEventListener('mouseenter',()=>{
-    
-        lnb.style.display= 'block';
-    
-});
-lnb.addEventListener('mouseleave',()=>{
-    
-        lnb.style.display= 'none';
-    
-});
 
 const categoryList = document.querySelectorAll('.category_list li');
 const swiperWraps = document.querySelectorAll('.best_items_wrap');

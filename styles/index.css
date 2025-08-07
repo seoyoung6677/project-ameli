@@ -89,12 +89,12 @@ body{min-width:1280px;}
 /* #wrap header .gnb > li {position: relative;} */
 #wrap header nav .gnb > li:hover > .lnb_bg {display:block;}
 #wrap header nav .gnb > li .lnb_bg {
-   
+    
     background-color: #fff;
     position:absolute;
     height:max-content;
     top: 60px;
-    left:0;
+    left:0; 
     width:100%; 
     padding:20px 50px;
     /* 초기 숨기기(마우스 올릴때만 보이도록) */
