@@ -200,7 +200,7 @@ main .main_banner .banner_btn #banner_next {
 }
 #wrap main .best_items .items_inner .items_wrap .best_category .category_list button {
     margin-bottom: 20px;
-    font-size:1.5rem ;
+    font-size:1.3rem ;
     font-weight: 500;
     color:#949494;
     display:block;
@@ -209,10 +209,11 @@ main .main_banner .banner_btn #banner_next {
 #wrap main .best_items .items_inner .items_wrap .best_category .category_list button:hover {
     color:#70B3CE;
     border-bottom: 1px solid #70B3CE;
+    font-weight:700;
 }
 #wrap main .best_items .items_inner .items_wrap .best_category .category_list .active button {
     color:#70B3CE;
-    font-weight:800;
+    font-weight:700;
     border-bottom: 1px solid #70B3CE;
 }
 #wrap main .best_items .items_inner .best_items_wrap {
@@ -353,7 +354,7 @@ main .best_items .items_inner .best_items_wrap .swiper-wrapper .swiper-slide .pr
     color:#57C2E2;
     background-color: #4B3A34;
     border-radius: 10px;
-
+   
     
 }
 .view_btn_wrap .view_btn:hover span {
@@ -844,6 +845,13 @@ main .best_items .items_inner .best_items_wrap .swiper-wrapper .swiper-slide .pr
 } 
 #wrap main .makeup_lookb .lookb_btn #lookb_next {
     transform: scaleX(-1);/* 버튼 좌우반전 */
+}
+
+
+
+/* 메이크업 룩북2 */
+#wrap main .makeup_lookb .slide2 .img_wrap .lookb_wrap h2 {
+    color:#ad3246;
 }
 /* 6행 ----------------------------------- */
 #wrap main .must_read_wrap {

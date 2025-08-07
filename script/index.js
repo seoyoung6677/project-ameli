@@ -24,6 +24,10 @@ const addswiper = new Swiper('.add',{
         delay:5000,
         disableOnInteraction:false,
     },
+    effect: 'fade',
+    fadeEffect: {
+      crossFade: true
+    },
     scrollbar:{
         el:'.swiper-scrollbar',
         draggable:true,
@@ -32,6 +36,26 @@ const addswiper = new Swiper('.add',{
     watchOverflow:true,
 });
 
+
+
+const lookbookSwiper = new Swiper('#look_book',{
+    slidesPerView: 'auto',
+    slidePerGroup:1,
+    loop:true,
+    autoplay:{
+        delay:5000,
+        disableOnInteraction:false,
+    },
+    effect: 'fade',
+    fadeEffect: {
+      crossFade: true
+    },
+    navigation: {
+      nextEl: '#lookb_next',
+      prevEl: '#lookb_prev',
+    },
+    watchOverflow:true,
+});
 const gnb =document.querySelector('.gnb');
 const lnb =document.querySelector('.lnb_bg');
 gnb.addEventListener('mouseenter', ()=> {
