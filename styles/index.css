@@ -458,18 +458,18 @@ main .best_items .items_inner .best_items_wrap .swiper-wrapper .swiper-slide .pr
     margin-bottom:27px;
     transition: 0.3s ease;
 }
-.add_banner .add .swiper-wrapper .swiper-slide .left_wrap .product_info .product_name h3:hover{
+.add_banner .add .swiper-wrapper .swiper-slide.slide1 .left_wrap .product_info .product_name h3:hover{
     color:#000;
     text-shadow:
     0 0 7px #fff,
     0 0 10px rgb(217, 171, 255);
 }
-.add_banner .add .swiper-wrapper .swiper-slide .left_wrap .product_info .product_txt p {
+.add_banner .add .swiper-wrapper .swiper-slide.slide1 .left_wrap .product_info .product_txt p {
     color:#fff;
     line-height:1.5;
     
 }
-.add_banner .add .swiper-wrapper .swiper-slide .left_wrap .product_info .product_txt p:hover {
+.add_banner .add .swiper-wrapper .swiper-slide.slide1 .left_wrap .product_info .product_txt p:hover {
     color:#fff;
     text-shadow:
     0 0 4px #fff,
