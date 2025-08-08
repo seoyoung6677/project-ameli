@@ -35,15 +35,33 @@ const addswiper = new Swiper('.add',{
     },
     watchOverflow:true,
 });
-
+/* 메인배너 */
+const bannerSwiper = new Swiper('#main_banner_wrap',{
+    slidesPerView: '1',
+    slidesPerGroup:1,
+    loop:true,
+    autoplay:{
+        delay:5000,
+        disableOnInteraction:false,
+    },
+    effect: 'fade',
+    fadeEffect: {
+      crossFade: true
+    },
+    navigation: {
+      nextEl: '#banner_prev',
+      prevEl: '#banner_next',
+    },
+    watchOverflow:true,
+});
 
 
 const lookbookSwiper = new Swiper('#look_book',{
     slidesPerView: 'auto',
-    slidePerGroup:1,
+    slidesPerGroup:1,
     loop:true,
     autoplay:{
-        delay:5000,
+        delay:4500,
         disableOnInteraction:false,
     },
     effect: 'fade',

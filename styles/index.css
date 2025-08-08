@@ -99,7 +99,7 @@ body{min-width:1280px;}
     padding:20px 50px;
     /* 초기 숨기기(마우스 올릴때만 보이도록) */
     display:none;
-    border: 2px solid red;
+    /* border: 2px solid red; */
     border-top:1px solid  rgba(0, 0, 0, 0.2);
 }
 /* #wrap header nav .gnb > li .lnb_bg:hover {display:block;} */
@@ -110,6 +110,7 @@ body{min-width:1280px;}
     display: flex;
     gap:50px;
     justify-content: center;
+    align-items: center;
 
 }
 #wrap header nav .gnb > li .lnb_bg .lnb_depth1 {
@@ -120,6 +121,14 @@ body{min-width:1280px;}
     flex-flow:row nowrap;/* 줄바꿈없이 정렬 */
 }
 
+.gnb > li {
+    /* background-color:aqua; */ height:45px;
+    /* 글자가 올라간 건 라인헤이트나 패딩 탑을 줘서 조절해주자 */
+    padding-top: 13px;
+}
+.lnb_depth1 li:hover a {
+   color:#57C2E2;
+}
 /* 1행 */
 .main_banner {
     width:100%;
@@ -144,6 +153,7 @@ main .main_banner .banner_wrap .banner_slides img {
     display:block;
     margin: 0 auto;
     z-index:20;
+    height:940px;
 
 }
 main .main_banner .banner_btn {
