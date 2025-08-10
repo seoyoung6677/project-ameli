@@ -5,6 +5,11 @@ body{min-width:1280px;}
     margin:0 auto;
 }
 
+html, body, #wrap, main {
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+}
 .top_banner {
     text-align: center;
     background-color:#BEE0EA;
@@ -872,7 +877,7 @@ main .best_items .items_inner .best_items_wrap .swiper-wrapper .swiper-slide .pr
     gap:41px;
     flex-direction: column;
     padding-top:131px;
-    
+    max-width: 1920px;
 }
 #wrap main .must_read_wrap .must_read_card {
     display: flex;
@@ -973,7 +978,7 @@ main .best_items .items_inner .best_items_wrap .swiper-wrapper .swiper-slide .pr
 #wrap main .popup_wrap {
     text-align:center;
     padding-top:131px;
-    
+    max-width: 1920px;
 }
 #wrap main .popup_wrap h2 {
     font-weight: 800;
@@ -988,6 +993,10 @@ main .best_items .items_inner .best_items_wrap .swiper-wrapper .swiper-slide .pr
 }
 #wrap main .popup_wrap .image_container {
     position:relative;
+}
+#wrap main .popup_wrap .image_container img {
+    width:100%;
+    
 }
 #wrap main .popup_wrap .image_container .overlay {
     position:absolute;
@@ -1032,7 +1041,7 @@ main .best_items .items_inner .best_items_wrap .swiper-wrapper .swiper-slide .pr
 /* 8행---------------------------- */
 #wrap main .brand_movie {
     padding-top:131px;
-    
+    max-width: 1920px;
 }
 #wrap main .brand_movie .container {
     max-width:1250px; min-width:320px;
