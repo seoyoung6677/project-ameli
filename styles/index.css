@@ -393,7 +393,7 @@ main .best_items .items_inner .best_items_wrap .swiper-wrapper .swiper-slide .pr
 .add_banner{
     position:relative;
    /*  padding-top:131px; */
-    max-width:100%;
+    max-width:1920px;
   /*   border:3px solid red; */
     
     /*     border: #70B3CE 3px solid; */
@@ -428,6 +428,12 @@ main .best_items .items_inner .best_items_wrap .swiper-wrapper .swiper-slide .pr
     height:auto;
     display:block;
 } /* 이거 주면 화살표도 개커짐 */
+
+.add_banner .add .swiper-wrapper .swiper-slide .slide-inner .img-box a img {
+    width:100%;
+    /* border:2px solid red; */
+    /* 이미지 크기 조정 */
+}
 .add_banner .add .swiper-wrapper .swiper-slide .item_list_wrap .item_list a:hover img {
    /*  border: 3px solid red; */
    /*  box-shadow: 0 0 7px 8px rgba(255, 255, 255, 0.1); */
