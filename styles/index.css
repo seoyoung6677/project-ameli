@@ -5,11 +5,7 @@ body{min-width:1280px;}
     margin:0 auto;
 }
 
-html, body, #wrap, main {
-  width: 100%;
-  max-width: 100%;
-  margin: 0;
-}
+
 .top_banner {
     text-align: center;
     background-color:#BEE0EA;
