@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <title>Document</title>
+    <link rel="stylesheet" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard-dynamic-subset.min.css" />
+    <link href="./styles/reset.css" rel="stylesheet">
+    <link href="./styles/index.css" rel="stylesheet">
+    <link href="./styles/login.css" rel="stylesheet">
+    <script src="./script/login.js" defer></script>
+    <script src="./script/index.js" defer></script>
+</head>
+<body>
+    <div class="top_banner">
+        <p>신촌 팝업 2차 오픈런 시작 6/10 ~ 7/3</p>
+    </div>
+    <div id="wrap">
+        <header>
+            <h1><a href="./index.html"><img src="./images/logo.png" alt="아멜리"></a></h1>
+            <nav>
+            <ul class="gnb">
+                <li>
+                    <a href="#">BEST</a>
+                    <div class="lnb_bg">
+                        <div class="lnb_container">
+                            <ul class="lnb_depth1">
+                                <li><a href="#">EYE</a></li>
+                                <li><a href="#">LIP</a></li>
+                                <li><a href="#">FACE</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                <a href="#">NEW</a>
+                <div class="lnb_bg" id="lnb_new">
+                    <div class="lnb_container">
+                    <ul class="lnb_depth1">
+                        <li><a href="#">FACE</a></li>
+                        <li><a href="#">EYE</a></li>
+                        <li><a href="#">LIP</a></li>
+                        <li><a href="#">FACE</a></li>
+                    </ul>
+                </div>
+                </div>
+                </li>
+                <li>
+                <a href="#">EYE</a>
+                <div class="lnb_bg" id="lnb_eye">
+                    <div class="lnb_container">
+                        <ul class="lnb_depth1">
+                            <li><a href="#">스텝 베이직</a></li>
+                            <li><a href="#">스윗 다이아</a></li>
+                            <li><a href="#">스파클 스팟</a></li>
+                        </ul>
+                    </div>
+                </div>
+                </li>
+                <li>
+                <a href="#">LIP</a>
+                <div class="lnb_bg" id="lnb_LIP">
+                    <div class="lnb_container">
+                        <ul class="lnb_depth1">
+                            <li><a href="#">터치밤</a></li>
+                            <li><a href="#">플랫립스</a></li>
+                            <li><a href="#">에어립스</a></li>
+                        </ul>
+                    </div>
+                </div>
+                </li>
+                <li>
+                <a href="#">SET</a>
+                <div class="lnb_bg" id="lnb_SET">
+                    <div class="lnb_container">
+                        <ul class="lnb_depth1">
+                            <li><a href="#">치얼업 박스</a></li>
+                            <li><a href="#">메이크업 세트</a></li>
+                            <li><a href="#">처음 세트</a></li>
+                            <li><a href="#">AI 필터 메이크업 세트</a></li>
+                        </ul>
+                    </div>
+                </div>
+                </li>
+                <li>
+                <a href="#">ai-heva</a>
+                <div class="lnb_bg" id="lnb_ai-heva">
+                    <div class="lnb_container">
+                        <ul class="lnb_depth1">
+                            <li><a href="#">ASK HEVA</a></li>
+                            <li><a href="#">버추얼 메이크업</a></li>
+                            <li><a href="#">퍼스널 컬러 진단</a></li>
+                        </ul>
+                    </div>
+                </div>
+                </li>
+            </ul>
+            </nav>
+            <ul class="right_menu">
+                <li><a href="./login.html"><img src="./images/person.png" alt="마이페이지"></a></li>
+                <li><a href="#"><img src="./images/Line.png" alt="구분선"></a></li>
+                <li><a href="#"><img src="./images/cart.png" alt="장바구니"></a></li>
+            </ul>
+        </header>
+        <main>
+            <div class="login_wrap">
+                <div class="login_container">
+                    <div class="login_bg">
+                        <p>뉴멜리 여러분 안녕하세요<br>“뉴” 뉴멜리 여러분도 환영해요</p>
+                        <div class="tab-title">
+                            <button type="button" class="tab active" data-targer="member">기존 회원이신가요?</button>
+                            <button type="button" class="tab" data-targer="guset">비회원 배송조회 </button>
+                        </div>
+                        <div class="tab_container">
+                            <form action="#" method="post" id="login_frm">
+                                <div class="id-pw">
+                                    <input type="text" name="user-id" id="user_id" placeholder="아이디">
+                                    <input type="text" name="user-pw" id="user_pw" placeholder="비밀번호">
+                                </div>
+                                <p class="error-msg" id="login_error"></p>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+   <!--  <footer>
+        <div class="footer_wrap">
+            <div class="left_wrap">
+                <img src="./images/footer_logo.png" alt="아멜리 로고">
+                <div class="sns_wrap">
+                    <a href="#"><img src="./images/insta.png"alt="인스타 바로가기"></a>
+                    <a href="#"><img src="./images/naver.png"alt="네이버 바로가기"></a>
+                    <a href="#"><img src="./images/youtube.png"alt="유튜브브 바로가기"></a>
+                </div>
+                <div class="left_txt">
+                    <a href="#">이용약관</a>
+                    <a href="#">개인정보처리방침</a>
+                    <a href="#">이용안내</a><br>
+                </div>
+                <a href="#" class="Inquiry">문의 biz@ameli.co.kr</a>
+            </div>
+            <div class="midddle_wrap">
+                <p>주식회사 아멜리글로벌</p>
+                <p>대표자 권유미</p>
+                <p>사업자등록번호 487-88-01427</p>
+                <p>개인정보보호책임자 이한나</p>
+                <p>주식회사 아멜리글로벌</p>
+                <p>통신판매업신고번호 제 2019-서울강남-04775 호[사업자정보확인]</p>
+                <p>06235 서울특별시 강남구 테헤란로20길 18 (역삼동) 부봉빌딩 6층</p>
+            </div>
+            <div class="right_wrap">
+                <p>고객센터 1533-8835(02-566-7889)</p>
+                <p>평일 10:00 - 17:00 (점심시간 12:30 - 13:30)주말 및 공휴일 휴무</p>
+            </div>
+        </div>
+    </footer> -->
+</body>
+</html>
