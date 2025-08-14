@@ -211,7 +211,7 @@ main .main_banner .banner_btn #banner_next {
 }
 #wrap main .best_items .items_inner .items_wrap .best_category .category_list button {
     margin-bottom: 20px;
-    font-size:1.3rem ;
+    font-size:1.4rem ;
     font-weight: 500;
     color:#949494;
     display:block;
@@ -287,9 +287,16 @@ main .best_items .items_inner .best_items_wrap .swiper-wrapper .swiper-slide .pr
     height:auto;
     /* border:solid 3px #AA3434; */
 }
+#wrap main .best_items .product_name{
+   /*  background: #57C2E2; */
+    height:60px;
+}
 #wrap main .best_items .product_name .name {
     font-weight: 600;
     font-weight:1.063rem;
+    
+    line-height:1.5;
+    
 }
 #wrap main .best_items .items_inner .best_items_wrap .swiper-wrapper .product_txt > *{
     padding-bottom:10px;
@@ -324,7 +331,7 @@ main .best_items .items_inner .best_items_wrap .swiper-wrapper .swiper-slide .pr
 #wrap main .best_items .product_txt .tag >*{
     color:#626262;
     font-weight:500;
-    font-size:0.938rem;
+    font-size:0.9rem;
 }
 #wrap main .best_items .product_txt .tag span:nth-child(1){
     margin-right:15px;

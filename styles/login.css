@@ -1,3 +1,140 @@
 main {
-    padding-top: 200px;
+    padding-top: 100px;
+    
+}
+.login_wrap {
+    min-height: 600px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    padding:102px 713px;
+}
+.login_wrap .login_container {
+    
+}
+.login_wrap .login_container .login_bg {
+    width:495px;
+    height:680px;
+    border:3px solid #BEE0EA;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    padding:59px 97px;
+
+}
+.login_wrap .login_container .login_bg > p {
+    font-size: 1.063rem;
+    line-height: 1.5;
+    text-align: center;
+    font-weight: 600;
+    margin-top: 49px;
+    margin-bottom: 39px;
+    
+}
+.login_wrap .login_container .login_bg .tab-title {
+    font-size: 0.938rem;
+    font-weight: 600;
+    display: flex;
+    gap:10px;
+    margin-bottom: 32px;
+} 
+.login_wrap .login_container .login_bg .tab-title .tab.active {
+    color:#000;
+    border-bottom:1px solid #000;
+}
+.login_wrap .login_container .login_bg .tab-title .tab {
+    padding:10px 10px;
+    color:#A3A3A3;
+    border-bottom:1px solid #A3A3A3;
+    
+
+}
+.login_wrap .login_container .login_bg .tab_container {}
+.login_wrap .login_container .login_bg .tab_container #login_frm {
+    
+}
+.login_wrap .login_container .login_bg .tab_container #login_frm .id-pw {
+    
+}
+.login_wrap .login_container .login_bg .tab_container #login_frm .id-pw  button {
+    width:50%;
+}
+.login_wrap .login_container .login_bg .tab_container #login_frm > .id-pw >* {
+     width:100%;
+    padding:13px 30px;
+    border:#A3A3A3 1px solid;
+    border-radius: 20px;
+    /* background: pink; */
+}
+.login_wrap .login_container .login_bg .tab_container #login_frm .id-pw #user_id {
+    width:100%;
+    margin-bottom:7px;
+}
+.login_wrap .login_container .login_bg .tab_container #login_frm .id-pw #user_pw {}
+.login_wrap .login_container .login_bg .tab_container #login_frm #login_error {}
+.login_wrap .login_container .login_bg .tab_container #login_frm .login_stay {}
+.login_wrap .login_container .login_bg .tab_container #login_frm .login_stay #user_stay_on {}
+.login_wrap .login_container .login_bg .tab_container #login_frm .login_stay  {
+    text-align: right;
+    margin-bottom: 16px;
+    margin-top: 16px;
+    display: flex;
+    gap:6px;
+    font-weight: 500;
+    font-size: 0.625rem;
+    justify-content: flex-end;
+    align-items: center;
+}
+.login_wrap .login_container .login_bg .tab_container #login_frm .btn_wrap > button{
+     width:100%;
+    padding:15px 30px;
+    font-size:0.813rem ;
+    border-radius: 20px;
+    /* background: pink; */
+    font-weight: 500;
+    
+}
+.login_wrap .login_container .login_bg .tab_container #login_frm .btn_wrap #sign_in {
+    background-color: #4B3A34;
+    color:#BEE0EA;
+    border:#A3A3A3 1px solid;
+    margin-bottom: 23px;
+    
+}
+.login_wrap .login_container .login_bg .tab_container #login_frm .btn_wrap .kakao-naver {
+    
+}
+#sign_up_ka {
+    background-color: #FEE500;
+    color:#000;
+    margin-bottom: 9px;
+}
+ #sign_up-na {
+    background-color: #03C75A;
+    color:#fff;
+}
+ .bottom-wrap {
+    display: flex;
+    font-size: 0.625rem;
+    margin-top: 6px;
+}
+.bottom-wrap .forgot_pw {
+    color:#A3A3A3;
+    border-bottom:1px solid #A3A3A3;
+    
+    margin-right: 79px;
+}
+ .bottom-wrap .forgot_id {
+    margin-right: 10px;
+ }
+.login_wrap .login_container .login_bg .tab_container #login_frm .bottom-wrap .sign_in {}
+
+.error-msg {
+    color:red;
+    font-size: 0.7rem;
+    margin-top: 10px;
+    margin-bottom:15px;
+    display:none; /* 기본 숨김 */
 }

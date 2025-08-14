@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="">
     <meta name="description" content="">
-    <title>Document</title>
+    <title>login | Ameli</title>
     <link rel="stylesheet" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard-dynamic-subset.min.css" />
     <link href="./styles/reset.css" rel="stylesheet">
     <link href="./styles/index.css" rel="stylesheet">
@@ -108,7 +108,7 @@
             <div class="login_wrap">
                 <div class="login_container">
                     <div class="login_bg">
-                        <p>뉴멜리 여러분 안녕하세요<br>“뉴” 뉴멜리 여러분도 환영해요</p>
+                        <p>뉴멜리 여러분 안녕하세요,<br>Ameli와 함께 감각적인 하루를 완성해보세요.</p>
                         <div class="tab-title">
                             <button type="button" class="tab active" data-targer="member">기존 회원이신가요?</button>
                             <button type="button" class="tab" data-targer="guset">비회원 배송조회 </button>
@@ -120,6 +120,22 @@
                                     <input type="text" name="user-pw" id="user_pw" placeholder="비밀번호">
                                 </div>
                                 <p class="error-msg" id="login_error"></p>
+                                <p class="login_stay">
+                                    <input type="checkbox" value="user_stay_on" name="user_stay" id="user_stay_on">
+                                    <label for="user_stay_on">자동로그인</label>
+                                </p>
+                                <div class="btn_wrap">
+                                    <button type="submit" id="sign_in">로그인하기</buttton>
+                                    <div class="kakao-naver">
+                                        <button type="submit" id="sign_up_ka">키카오톡 로그인 / 회원가입</buttton>
+                                        <button type="submit" id="sign_up-na">네이버 로그인 / 회원가입</buttton>
+                                    </div>
+                                </div>
+                                <div class="bottom-wrap">
+                                    <a href="#" class="forgot_pw">비밀번호를 잊으셨나요?</a></p>
+                                    <a href="#" class="forgot_id">아이디 찾기</a></p>
+                                    <a href="#" class="sign_in">회원가입</a></p>
+                                </div>
                             </form>
                         </div>
                     </div>
@@ -127,7 +143,7 @@
             </div>
         </main>
     </div>
-   <!--  <footer>
+    <footer>
         <div class="footer_wrap">
             <div class="left_wrap">
                 <img src="./images/footer_logo.png" alt="아멜리 로고">
@@ -157,6 +173,6 @@
                 <p>평일 10:00 - 17:00 (점심시간 12:30 - 13:30)주말 및 공휴일 휴무</p>
             </div>
         </div>
-    </footer> -->
+    </footer>
 </body>
 </html>
